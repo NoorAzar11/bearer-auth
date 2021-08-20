@@ -25,7 +25,7 @@
     "db:create": "sequelize db:create",
     "watch": "nodemon index.js",
     "test-watch": "NODE_ENV=test jest --watchAll",
-    "test": "NODE_ENV=test jest"
+    "test": "jest --coverage --verbose "
   },
   "keywords": [],
   "author": "",

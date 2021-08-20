@@ -24,6 +24,7 @@ describe('Auth Middleware', () => {
   // admin:foo: YWRtaW46Zm9v
 
   // Mock the express req/res/next that we need for each middleware call
+  
   const req = {};
   const res = {
     status: jest.fn(() => res),
