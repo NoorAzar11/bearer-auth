@@ -6,7 +6,8 @@ const { Sequelize, DataTypes } = require('sequelize');
 
 const userModel = require('./users')
 
-const DATABASE_URL = process.env.DATABASE_URL||'postgres://localhost:5432/noor';
+const DATABASE_URL = process.env.DATABASE_URL;
+// ||'postgres://localhost:5432/noor'
 
 let sequelizeOptions = {
 
@@ -21,7 +22,7 @@ let sequelizeOptions = {
       }
   };
 
-let sequelize = new Sequelize(DATABASE_URL,{});
+let sequelize = new Sequelize(DATABASE_URL,sequelizeOptions);
 
 module.exports = {
     db: sequelize,
